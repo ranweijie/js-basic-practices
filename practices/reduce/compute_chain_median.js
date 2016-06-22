@@ -12,6 +12,7 @@ function compute_chain_median(collection) {
   }
   sortedNumArr = numArr.sort(function (a,b) {return a-b});
   console.log(sortedNumArr);
+  
   if(len % 2 != 0){
     medianNum = sortedNumArr[(len-1)/2];
     return medianNum;

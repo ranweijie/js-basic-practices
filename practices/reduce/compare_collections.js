@@ -8,15 +8,14 @@ function compare_collections(collection_a, collection_b) {
       lenB = collection_b.length;
   if(lenA != lenB){
     return isSame
-  }else{
-    for(var i = 0; i < lenA; i++){
-      if(collection_a[i] != collection_b[i]){
-        return isSame
-      }
-    }
-    isSame = true;
-    return isSame;
   }
+  for(var i = 0; i < lenA; i++){
+    if(collection_a[i] != collection_b[i]){
+      return isSame
+    }
+  }
+  isSame = true;
+  return isSame;
 }
 
 module.exports = compare_collections;

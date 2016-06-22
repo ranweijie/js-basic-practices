@@ -3,7 +3,7 @@
 function calculate_elements_sum(collection) {
   //在这里写入代码
   var total = 0;
-  for(var i = 0,len = collection.length; i < len; i++){
+  for(var i in collection){
     total += collection[i];
   }
   return total;
